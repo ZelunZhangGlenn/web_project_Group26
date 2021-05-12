@@ -3,51 +3,140 @@
 <head>
   <title>Express</title>
   <meta charset = "utf-8">
-
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <h1>Onetrack</h1>
-  <ul>
-    <li><a href = "#home">Home</a></li>
-    <li><a href = "#news">News</a></li>
-    <li><a href = "#Health_topic">Health_topis</a></li>
 
-  </ul>
+
+  <div id = "headline">
+    <div id = "title">
+      <h1><a href = "#home">OneTrack</a></h1>
+      <a id = "login" style="float: right" href = "#login">login</a>
+      <br />
+    </div id = "#mainbar">
+    <ul>
+    <li><a href = "#home">Home</a></li>
+    <li><a href = "#news">Covid-19 News</a></li>
+    <li><a href = "#Health_topic">Health_topics</a></li>
+    </ul>
+    <hr id = "main_hr">
+  </div>
+
+
   <main>
-    <button> Check in </button>
-    <p>Today new confirm cases : </p>
+
+    <div id = "check_in_part">
+      <button id = "main_button"> Check in </button>
+      <p id = "main_para">Today new confirm cases : <span id = "cases">0</span></p>
+      <!-- temp picture -->
+      <a href = "#image">
+      <image src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/COVID-19_Outbreak_Cases_in_Australia_%28Density%29.svg/220px-COVID-19_Outbreak_Cases_in_Australia_%28Density%29.svg.png" alt = "map"
+        id = "cases_pic"
+      ></iamge>
+      </a>
+    </div>
+
+
+
+    <div id = "middle_part">
+      <br>
+      <div id = "hotspot_overall">
+      <h3 id ="htitle">Hospots :<a class ="htl"href="http://nyan.cat"> view all</a></h3>
+
+      <table id = "htable">
+        <tr class="r1">
+          <th >City</th>
+          <th >Total Confirmed Cases</th>
+          <th >Existing Cases</th>
+          <th >Cured Cases</th>
+        </tr>
+
+        <tr class="rows">
+          <th class="cn">Sydney</th>
+          <th class= "tcc">100000</th>
+          <th class= "ec">2345</th>
+          <th class= "cc">6814</th>
+        </tr>
+
+        <tr class="rows">
+          <th class="cn">Melbourne </th>
+          <th class= "tcc">100000</th>
+          <th class= "ec">2345</th>
+          <th class= "cc">6814</th>
+        </tr>
+
+        <tr class="rows">
+          <th class="cn">Brisbane </th>
+          <th class= "tcc">100000</th>
+          <th class= "ec">2345</th>
+          <th class= "cc">6814</th>
+        </tr>
+
+          <tr class="rows">
+          <th class="cn">Canberra </th>
+          <th class= "tcc">100000</th>
+          <th class= "ec">2345</th>
+          <th class= "cc">6814</th>
+          </tr>
+
+          <tr class="rows">
+          <th class="cn">Adelaide </th>
+          <th class= "tcc">100000</th>
+          <th class= "ec">2345</th>
+          <th class= "cc">6814</th>
+        </tr>
+      </table>
+      <img align="center" id= "trend" src="images/yq.png" alt="Covid trend">
+      <hr id = "seperate_line">
+    </div>
+    <br>
+
+    <br>
+    <div id = "news_overall">
+      <h3>Covid-19 News : <a class = "htl" href="http://nyan.cat">view all</a></h3>
+      <br>
+      <div id = "three_news_row">
+        <div class = "column">
+          <a href="https://www.abc.net.au/news/2021-05-09/covid-19-six-new-cases-in-victorian-hotel-quarantine/100127202">
+          <h2>Covid</h2>
+          <hr />
+          <img src="images/images.jpeg" alt="Yes!!">
+          </a>
+        </div>
+
+        <div class = "column">
+          <a href="https://www.abc.net.au/news/science/2021-01-08/covid-19-vaccine-injection-upper-arm-muscle-deltoid-immune/13031918">
+          <h2>Inject</h2>
+          <hr />
+          <img src="images/inject.jpeg" alt="Inject">
+          </a>
+
+        </div>
+        <div class = "column">
+          <a href="https://www.abc.net.au/news/2021-05-06/wa-new-covid-rules-for-perth-and-peel-explained/100122000">
+          <h2>Mask</h2>
+          <hr />
+          <img src="images/mask.jpeg" alt="Inject">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
     <hr>
-    <h3>Hospots : <a href="http://nyan.cat">View all</a></h3>
-    <table>
-      <tr>
-        <th>City</th>
-        <th>Confirm cases</th>
-      </tr>
-      <tr>
-        <th>Sydney</th>
-        <th>10</th>
-      </tr>
-      <tr>
-        <th>Melbourne</th>
-        <th>15</th>
-      </tr>
-    </table>
-  <hr>
-  <h3>Covid News : <a href="http://nyan.cat">View all</a></h3>
-  <div>
-    <h2><a href="https://www.abc.net.au/news/2021-05-09/covid-19-six-new-cases-in-victorian-hotel-quarantine/100127202">Covid</a></h2>
-    <img src="images/images.jpeg" alt="Yes!!" width="500" height="333">
-  </div>
-  <div>
-    <h2><a href="https://www.abc.net.au/news/science/2021-01-08/covid-19-vaccine-injection-upper-arm-muscle-deltoid-immune/13031918">Inject</a></h2>
-    <img src="images/inject.jpeg" alt="Inject" width="500" height="333">
-  </div>
-  <div>
-    <h2><a href="https://www.abc.net.au/news/2021-05-06/wa-new-covid-rules-for-perth-and-peel-explained/100122000">Mask</a></h2>
-    <img src="images/mask.jpeg" alt="Inject" width="500" height="333">
-  </div>
+    <div id = "footer">
+      <p class="last">Copyright © 2021 OneGroup</p>
+      <p class="last"><a href= "https://myuni.adelaide.edu.au/" class = "bottom">Private Policy</a></p>
+      <p class="last"><a href= "https://myuni.adelaide.edu.au/" class = "bottom">Onegroup's Story</a></p>
+      <p class="last"><a href= "https://myuni.adelaide.edu.au/" class = "bottom">Contact Us &#8595</a></p>
+      <div id="find_icon">
+        <a class="fa fa-facebook"></a>
+        <a class="fa fa-google"></a>
+        <a class="fa fa-twitter"></a>
+        <a class="fa fa-instagram"></a>
   </main>
 </body>
 
