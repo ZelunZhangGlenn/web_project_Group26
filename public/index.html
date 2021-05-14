@@ -1,32 +1,39 @@
 <html lang="en">
 
 <head>
-  <title>Express</title>
+  <title>OneTrack By Group 26 Name:OneGroup</title>
   <meta charset = "utf-8">
   <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/43904e51d8.js" crossorigin="anonymous"></script>
+  <script src="javascripts/ajax.js" defer></script>
 </head>
 
 <body>
 
-
+  <a id = "login" href = "#login"><i class="fa fa-fw fa-user"></i> login</a>
   <div id = "headline">
     <div id = "title">
-      <h1><a href = "#home">OneTrack</a></h1>
-      <a id = "login" style="float: right" href = "#login">login</a>
-      <br />
-    </div id = "#mainbar">
-    <ul>
-    <li><a href = "#home">Home</a></li>
-    <li><a href = "#news">Covid-19 News</a></li>
-    <li><a href = "#Health_topic">Health_topics</a></li>
-    </ul>
+      <h1><a href = "#home" onclick = "function_on_click_home()">OneTrack</a></h1>
+      <br/>
+    </div>
+    <div class = "mainbar">
+      <a class="active" href="#" onclick = "function_on_click_home()"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="#"><i class="fa fas fa-virus"></i>Covid-19 News</a>
+      <div class = "health_topic_bar">
+        <a href="#"><i class="fa fas fa-head-side-mask"></i>Health Topics<i class="fa fas fa-chevron-down"></i></a>
+        <div class = "sub_bar">
+          <a href = "#WhatisCovid">What is Covid-19</a>
+          <a href = "#WhyWeNeedVaccine">Covid-19 Vaccine</a>
+        </div>
+      </div>
+    </div>
     <hr id = "main_hr">
   </div>
 
 
-  <main>
-
+  <main id = "main">
+    <div id = "mainPage">
     <div id = "check_in_part">
       <button id = "main_button"> Check in </button>
       <p id = "main_para">Today new confirm cases : <span id = "cases">0</span></p>
@@ -43,7 +50,7 @@
     <div id = "middle_part">
       <br>
       <div id = "hotspot_overall">
-      <h3 id ="htitle">Hospots :<a class ="htl"href="http://nyan.cat"> view all</a></h3>
+      <h3 id ="htitle">Covid-19 Hotspots :<a class ="htl"href="http://nyan.cat"> view all</a></h3>
 
       <table id = "htable">
         <tr class="r1">
@@ -88,7 +95,9 @@
           <th class= "cc">6814</th>
         </tr>
       </table>
-      <img align="center" id= "trend" src="images/yq.png" alt="Covid trend">
+      <!--<div class="chart">-->
+      <!--      <img   src="images/yq.png" alt="Yes!!">-->
+      <!--</div>-->
       <hr id = "seperate_line">
     </div>
     <br>
@@ -97,46 +106,163 @@
     <div id = "news_overall">
       <h3>Covid-19 News : <a class = "htl" href="http://nyan.cat">view all</a></h3>
       <br>
-      <div id = "three_news_row">
+      <div class = "three_news_row">
         <div class = "column">
           <a href="https://www.abc.net.au/news/2021-05-09/covid-19-six-new-cases-in-victorian-hotel-quarantine/100127202">
-          <h2>Covid</h2>
-          <hr />
-          <img src="images/images.jpeg" alt="Yes!!">
+          <hr>
+          <h4 class = "news_heading">Six new COVID-19 cases in Victorian hotel quarantine</h4>
+          <div class = "frame"><img src="images/Left1.png" alt="Yes!!"></div>
           </a>
         </div>
 
         <div class = "column">
           <a href="https://www.abc.net.au/news/science/2021-01-08/covid-19-vaccine-injection-upper-arm-muscle-deltoid-immune/13031918">
-          <h2>Inject</h2>
           <hr />
-          <img src="images/inject.jpeg" alt="Inject">
+          <h4 class = "news_heading">Why vaccines are injected in your upper arm muscle, and not in your veins</h4>
+          <div class = "frame"><img src="images/right1.png" alt="Inject"></div>
           </a>
-
         </div>
+
         <div class = "column">
           <a href="https://www.abc.net.au/news/2021-05-06/wa-new-covid-rules-for-perth-and-peel-explained/100122000">
-          <h2>Mask</h2>
           <hr />
-          <img src="images/mask.jpeg" alt="Inject">
+          <h4 class = "news_heading">Perth and Peel COVID-19 rules relaxed: 'Do I need to wear a mask' and other questions answered</h4>
+          <div class = "frame"><img src="images/right2.png" alt="Inject"></div>
           </a>
         </div>
 
       </div>
     </div>
   </div>
+  <br><br>
+  </div>
+  <!-- home page end here-->
 
+  <div id = "news_specfic_1">
+    <div class = "dirction">
+      <button class = "past_button"> <span>Home</span></button>
+      <button class = "now_button"> <span>News</span> </button>
+  <br><br><br>
+      </div>
+      <div id="left1">
+         <div class="lnsize">
+            <a href="https://www.abc.net.au/news/2021-05-09/covid-19-six-new-cases-in-victorian-hotel-quarantine/100127202">
+
+
+            <img src="images/Left1.png" alt="Yes!!">
+            <div class="left_news_div">
+            <h2 class="news_ltitle">Six new COVID-19 cases in Victorian hotel quarantine</h2>
+            <p class="news_lp">Victoria has recorded six new cases of COVID-19 in hotel quarantine in the past 24 hours — the largest number recorded since the quarantine system reopened on April 8.
+            The new cases are a child, a teenage boy, and four adults aged in their 20s, 40s, and 50s.</p>
+            </div>
+
+            </a>
+          </div>
+      </div>
+
+      <div id="right3">
+        <div class="rnsize">
+            <a href="https://www.abc.net.au/news/science/2021-01-08/covid-19-vaccine-injection-upper-arm-muscle-deltoid-immune/13031918">
+            <h2 class="news_rtitle">Why  vaccines  are  injected  in  your  upper  arm  muscle</h2>
+
+            <img  class="rnimg" src="images/right1.png" align="left" alt="muscle!"><p class="news_rp">Victoria has recorded six new cases of COVID-19 in hotel quarantine in the past 24 hours
+            </p>
+            </a>
+          </div>
+
+          <div class="rnsize">
+            <a href="https://www.abc.net.au/news/2021-05-06/wa-new-covid-rules-for-perth-and-peel-explained/100122000">
+            <h2 class="news_rtitle">Do I need to wear a mask' and other questions answered</h2>
+
+            <img class="rnimg" src="images/right2.png"  align="left" alt="mask"><p class="news_rp">COVID-19 rules in the Perth and Peel regions will change from this Saturday, with masks no longer needed at work
+            </p>
+            </a>
+
+          </div>
+          <div class="rnsize">
+            <a href="https://www.abc.net.au/news/2021-05-13/moderna-pfizer-mrna-covid-vaccine-update/100136886">
+            <h2 class="news_rtitle">Why is Australia buying Moderna? Will I get a COVID vaccine sooner?</h2>
+
+            <img  class="rnimg" src="images/right3.png"  align="left" alt="moderna"><p class="news_rp">Sometimes it feels like there have been more versions of the Australian vaccine rollout.
+            </p>
+            </a>
+          </div>
+      </div>
+  </div>
+
+    <div id="banner">
+        <div class = "banner-image"><img src="images/covid-19.jpeg"></div>
+        <ul class="banner-word">
+            <li class="banner-word1"><a href="#"><strong>Overview</strong></a></li>
+            <li class="banner-word2"><a href="#"><strong>Prevention</strong></a></li>
+            <li class="banner-word2"><a href="#"><strong>Symptoms</strong></a></li>
+        </ul>
+        <span class="banner1">
+            <p class="htp_rp">
+            Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+            </p>
+            <p class="htp_rp">
+            Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.<br>Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.
+            </p>
+            <p class="htp_rp">
+            The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face.
+            </p>
+            <p class="htp_rp">
+            The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).
+            </p>
+        </span>
+    </div>
+    <div id="vaccination">
+      <div class = "vac1-image"><img src="images/vac1.png"></div>
+      <div class = "vac2-image"><img src="images/vac2.png"></div>
+      <h2 class="vac_title">
+        Protection through vaccination
+      </h2>
+      <p class="vac_rp">
+        Vaccines strengthen your immune system by training it to quickly remember and fight specific germs.
+      </p>
+      <p class="vac_rp">
+        Vaccination involves receiving a vaccine from a needle or drops in the mouth by a trained health professional.A COVID-19 vaccine will be from a needle.
+      </p>
+      <p class="vac_rp">
+        After vaccination, if you do catch the disease, your illness is likely to be less severe.
+      </p>
+      <p class="vac_rp">
+        Vaccines are a safe way to strengthen your immune system without causing illness.
+      </p>
+      <h2 class="vac_title">
+        Likely side effects from COVID-19 vaccines
+      </h2>
+      <p class="vac_rp">
+        All medicines, including vaccines, have risks and benefits. Usually, any side effects are mild and may only last a few days.
+      </p>
+      <p class="vac_rp">
+        Some of the normal temporary side effects for COVID-19 vaccines include pain at the injection site, fever or muscle aches.
+      </p>
+      <p class="vac_rp">
+        Some people will experience flu-like symptoms from the vaccine that are more significant when compared to other common vaccinations, and may need time away from normal activities. For the Pfizer (COMIRNATY) vaccine, these symptoms are more common after the second dose. For the AstraZeneca vaccine, these symptoms are more common after the first dose.
+      </p>
+    </div>
     <hr>
     <div id = "footer">
-      <p class="last">Copyright © 2021 OneGroup</p>
-      <p class="last"><a href= "https://myuni.adelaide.edu.au/" class = "bottom">Private Policy</a></p>
-      <p class="last"><a href= "https://myuni.adelaide.edu.au/" class = "bottom">Onegroup's Story</a></p>
-      <p class="last"><a href= "https://myuni.adelaide.edu.au/" class = "bottom">Contact Us &#8595</a></p>
+      <p class="last">Copyright © 2021 OneGroup<br>
+        <a href= "https://myuni.adelaide.edu.au/" class = "bottom">Private Policy</a><br>
+        <a href= "https://myuni.adelaide.edu.au/" class = "bottom">Onegroup's Story</a><br>
+        <p class = "last">Contact Us</p></p>
       <div id="find_icon">
-        <a class="fa fa-facebook"></a>
-        <a class="fa fa-google"></a>
-        <a class="fa fa-twitter"></a>
-        <a class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.google.com/account/about/" class="fa fa-google"></a>
+        <a href="https://twitter.com/?lang=en"class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/"class="fa fa-instagram"></a>
+      </div>
+      <div id = "who">
+      <a href= "https://www.who.int/"><img src="images/world-health-organization-100.png" alt="World health organization icon"></a>
+      </div>
+    </div>
+    <button onclick="gototop()" id="go_top" title="Go to top">Top</button>
+    <!--<img id = "image" src="images/mask.jpeg">-->
+
+
   </main>
 </body>
 
