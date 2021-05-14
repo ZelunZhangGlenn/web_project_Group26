@@ -18,13 +18,13 @@
       <br/>
     </div>
     <div class = "mainbar">
-      <a class="active" href="#" onclick = "function_on_click_home()"><i class="fa fa-fw fa-home"></i>Home</a>
-      <a href="#"><i class="fa fas fa-virus"></i>Covid-19 News</a>
+      <a class="active" href="#home" onclick = "function_on_click_home()"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="#newsOverall" onclick = "function_on_click_news_overall()"><i class="fa fas fa-virus"></i>Covid-19 News</a>
       <div class = "health_topic_bar">
         <a href="#"><i class="fa fas fa-head-side-mask"></i>Health Topics<i class="fa fas fa-chevron-down"></i></a>
         <div class = "sub_bar">
-          <a href = "#WhatisCovid">What is Covid-19</a>
-          <a href = "#WhyWeNeedVaccine">Covid-19 Vaccine</a>
+          <a href = "#WhatisCovid" onclick = "function_on_click_WhatisCovid()">What is Covid-19</a>
+          <a href = "#WhyWeNeedVaccine" onclick = "function_on_click_Vaccine()">Covid-19 Vaccine</a>
         </div>
       </div>
     </div>
@@ -33,7 +33,7 @@
 
 
   <main id = "main">
-    <div id = "mainPage">
+    <div id = "homePage">
     <div id = "check_in_part">
       <button id = "main_button"> Check in </button>
       <p id = "main_para">Today new confirm cases : <span id = "cases">0</span></p>
@@ -101,7 +101,6 @@
       <hr id = "seperate_line">
     </div>
     <br>
-
     <br>
     <div id = "news_overall">
       <h3>Covid-19 News : <a class = "htl" href="http://nyan.cat">view all</a></h3>
@@ -142,55 +141,55 @@
     <div class = "dirction">
       <button class = "past_button"> <span>Home</span></button>
       <button class = "now_button"> <span>News</span> </button>
-  <br><br><br>
-      </div>
-      <div id="left1">
-         <div class="lnsize">
-            <a href="https://www.abc.net.au/news/2021-05-09/covid-19-six-new-cases-in-victorian-hotel-quarantine/100127202">
+      <br><br><br>
+    </div>
+    <div id="left1">
+       <div class="lnsize">
+          <a href="https://www.abc.net.au/news/2021-05-09/covid-19-six-new-cases-in-victorian-hotel-quarantine/100127202">
 
 
-            <img src="images/Left1.png" alt="Yes!!">
-            <div class="left_news_div">
-            <h2 class="news_ltitle">Six new COVID-19 cases in Victorian hotel quarantine</h2>
-            <p class="news_lp">Victoria has recorded six new cases of COVID-19 in hotel quarantine in the past 24 hours — the largest number recorded since the quarantine system reopened on April 8.
-            The new cases are a child, a teenage boy, and four adults aged in their 20s, 40s, and 50s.</p>
-            </div>
-
-            </a>
+          <img src="images/Left1.png" alt="Yes!!">
+          <div class="left_news_div">
+          <h2 class="news_ltitle">Six new COVID-19 cases in Victorian hotel quarantine</h2>
+          <p class="news_lp">Victoria has recorded six new cases of COVID-19 in hotel quarantine in the past 24 hours — the largest number recorded since the quarantine system reopened on April 8.
+          The new cases are a child, a teenage boy, and four adults aged in their 20s, 40s, and 50s.</p>
           </div>
-      </div>
 
-      <div id="right3">
+          </a>
+        </div>
+    </div>
+
+    <div id="right3">
+      <div class="rnsize">
+          <a href="https://www.abc.net.au/news/science/2021-01-08/covid-19-vaccine-injection-upper-arm-muscle-deltoid-immune/13031918">
+          <h2 class="news_rtitle">Why  vaccines  are  injected  in  your  upper  arm  muscle</h2>
+
+          <img  class="rnimg" src="images/right1.png" align="left" alt="muscle!"><p class="news_rp">Victoria has recorded six new cases of COVID-19 in hotel quarantine in the past 24 hours
+          </p>
+          </a>
+        </div>
+
         <div class="rnsize">
-            <a href="https://www.abc.net.au/news/science/2021-01-08/covid-19-vaccine-injection-upper-arm-muscle-deltoid-immune/13031918">
-            <h2 class="news_rtitle">Why  vaccines  are  injected  in  your  upper  arm  muscle</h2>
+          <a href="https://www.abc.net.au/news/2021-05-06/wa-new-covid-rules-for-perth-and-peel-explained/100122000">
+          <h2 class="news_rtitle">Do I need to wear a mask' and other questions answered</h2>
 
-            <img  class="rnimg" src="images/right1.png" align="left" alt="muscle!"><p class="news_rp">Victoria has recorded six new cases of COVID-19 in hotel quarantine in the past 24 hours
-            </p>
-            </a>
-          </div>
+          <img class="rnimg" src="images/right2.png"  align="left" alt="mask"><p class="news_rp">COVID-19 rules in the Perth and Peel regions will change from this Saturday, with masks no longer needed at work
+          </p>
+          </a>
 
-          <div class="rnsize">
-            <a href="https://www.abc.net.au/news/2021-05-06/wa-new-covid-rules-for-perth-and-peel-explained/100122000">
-            <h2 class="news_rtitle">Do I need to wear a mask' and other questions answered</h2>
+        </div>
+        <div class="rnsize">
+          <a href="https://www.abc.net.au/news/2021-05-13/moderna-pfizer-mrna-covid-vaccine-update/100136886">
+          <h2 class="news_rtitle">Why is Australia buying Moderna? Will I get a COVID vaccine sooner?</h2>
 
-            <img class="rnimg" src="images/right2.png"  align="left" alt="mask"><p class="news_rp">COVID-19 rules in the Perth and Peel regions will change from this Saturday, with masks no longer needed at work
-            </p>
-            </a>
-
-          </div>
-          <div class="rnsize">
-            <a href="https://www.abc.net.au/news/2021-05-13/moderna-pfizer-mrna-covid-vaccine-update/100136886">
-            <h2 class="news_rtitle">Why is Australia buying Moderna? Will I get a COVID vaccine sooner?</h2>
-
-            <img  class="rnimg" src="images/right3.png"  align="left" alt="moderna"><p class="news_rp">Sometimes it feels like there have been more versions of the Australian vaccine rollout.
-            </p>
-            </a>
-          </div>
-      </div>
+          <img  class="rnimg" src="images/right3.png"  align="left" alt="moderna"><p class="news_rp">Sometimes it feels like there have been more versions of the Australian vaccine rollout.
+          </p>
+          </a>
+        </div>
+    </div>
   </div>
-
-    <div id="banner">
+  <!-- newsOverall end here-->
+  <div id="banner">
         <div class = "banner-image"><img src="images/covid-19.jpeg"></div>
         <ul class="banner-word">
             <li class="banner-word1"><a href="#"><strong>Overview</strong></a></li>
@@ -212,9 +211,11 @@
             </p>
         </span>
     </div>
+
+    <!-- What is Covid end here-->
+
     <div id="vaccination">
-      <div class = "vac1-image"><img src="images/vac1.png"></div>
-      <div class = "vac2-image"><img src="images/vac2.png"></div>
+      <div class = "vac1-image"><img src="images/Gov-covid.jpeg"></div>
       <h2 class="vac_title">
         Protection through vaccination
       </h2>
@@ -243,27 +244,25 @@
         Some people will experience flu-like symptoms from the vaccine that are more significant when compared to other common vaccinations, and may need time away from normal activities. For the Pfizer (COMIRNATY) vaccine, these symptoms are more common after the second dose. For the AstraZeneca vaccine, these symptoms are more common after the first dose.
       </p>
     </div>
-    <hr>
-    <div id = "footer">
-      <p class="last">Copyright © 2021 OneGroup<br>
-        <a href= "https://myuni.adelaide.edu.au/" class = "bottom">Private Policy</a><br>
-        <a href= "https://myuni.adelaide.edu.au/" class = "bottom">Onegroup's Story</a><br>
-        <p class = "last">Contact Us</p></p>
-      <div id="find_icon">
-        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-        <a href="https://www.google.com/account/about/" class="fa fa-google"></a>
-        <a href="https://twitter.com/?lang=en"class="fa fa-twitter"></a>
-        <a href="https://www.instagram.com/"class="fa fa-instagram"></a>
-      </div>
-      <div id = "who">
-      <a href= "https://www.who.int/"><img src="images/world-health-organization-100.png" alt="World health organization icon"></a>
-      </div>
-    </div>
-    <button onclick="gototop()" id="go_top" title="Go to top">Top</button>
-    <!--<img id = "image" src="images/mask.jpeg">-->
-
 
   </main>
+    <hr>
+    <div id = "footer">
+    <p class="last">Copyright © 2021 OneGroup<br>
+      <a href= "https://myuni.adelaide.edu.au/" class = "bottom">Private Policy</a><br>
+      <a href= "https://myuni.adelaide.edu.au/" class = "bottom">Onegroup's Story</a><br>
+      <p class = "last">Contact Us</p></p>
+    <div id="find_icon">
+      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+      <a href="https://www.google.com/account/about/" class="fa fa-google"></a>
+      <a href="https://twitter.com/?lang=en"class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/"class="fa fa-instagram"></a>
+    </div>
+    <div id = "who">
+    <a href= "https://www.who.int/"><img src="images/world-health-organization-100.png" alt="World health organization icon"></a>
+    </div>
+  </div>
+  <button onclick="gototop()" id="go_top" title="Go to top">Top</button>
 </body>
 
 </html>

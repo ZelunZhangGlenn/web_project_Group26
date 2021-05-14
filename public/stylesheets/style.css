@@ -337,7 +337,7 @@ font-size:110%;
 
 
 #banner{
-    /*display:none;*/
+    display:none;
     padding-left:8em;
     padding-right:8em;
     /*width: 1570px;*/
@@ -624,6 +624,7 @@ border-bottom-left-radius: 25px;
 
 }
 #vaccination{
+  display:none;
   padding-left:8em;
   padding-right:8em;
 }
@@ -634,16 +635,8 @@ border-bottom-left-radius: 25px;
 }
 .vac1-image img{
     height:72%;
-    width:36%;
+    width:100%;
     overflow: auto;
     position: relative;
     display:inline-block;
-}
-.vac2-image img{
-    height:72%;
-    width:36%;
-    overflow: auto;
-    position: relative;
-    display:inline-block;
-
 }
