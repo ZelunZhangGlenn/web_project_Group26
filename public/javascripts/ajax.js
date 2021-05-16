@@ -1,12 +1,6 @@
 var button = document.getElementById("go_top");
-// var image = document.getElementById("Haha"); //play
-// var navbar = document.getElementsByClassName("mainbar");
-// var okay = navbar.offsetTop;
-// console.log(navbar);
-
 window.onscroll = function(){
     scrolldown();
-    // headFunction();
 };
 
 function scrolldown(){
@@ -26,7 +20,6 @@ function function_on_click_home(){
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
-            var mainPart = document.getElementById("main");
             var homePage = document.getElementById("homePage");
             var news = document.getElementById("news_specfic_1");
             var vaccine = document.getElementById("vaccination");
@@ -46,7 +39,6 @@ function function_on_click_news_overall(){
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
-            var mainPart = document.getElementById("main");
             var homePage = document.getElementById("homePage");
             var news = document.getElementById("news_specfic_1");
             var vaccine = document.getElementById("vaccination");
@@ -86,7 +78,6 @@ function function_on_click_Vaccine(){
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
-            var mainPart = document.getElementById("main");
             var homePage = document.getElementById("homePage");
             var news = document.getElementById("news_specfic_1");
             var vaccine = document.getElementById("vaccination");
@@ -101,19 +92,5 @@ function function_on_click_Vaccine(){
     xhttp.send();
 
 }
-
-
-// Head bar //
-
-// function headFunction() {
-//     console.log("1");
-//   if (window.pageYOffset >= okay) {
-//     console.log("fuck111");
-//     navbar.classList.add("test_bar");
-//   } else {
-//     navbar.classList.remove("test_bar");
-//   }
-
-// }
 
 
